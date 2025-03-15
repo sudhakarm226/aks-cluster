@@ -1,3 +1,11 @@
+provider "azurerm" {
+  features {}
+  subscription_id = "a95dbe9e-bf88-4327-88b8-f85c96e18436"
+  #tenant_id = "6af5992f-c8b9-4f47-ba6e-f795ec682a52"
+  #client_id = "533c0e52-4b6a-4b8c-8167-7f6c66d9742a"
+  #client_secret = "rgy8Q~xLrwN1ptmTRTDJkRvTIXgApZ9ZPLb37cG6"
+}
+
 resource "azurerm_resource_group" "k8s-rg" {
   name     = "k8s"
   location = "South India"
