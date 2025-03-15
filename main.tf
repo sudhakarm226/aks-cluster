@@ -1,11 +1,12 @@
+terraform {
 backend "azurerm" {
   resource_group_name  = "infra-jenkins-cicd"
   storage_account_name = "azbackendbucket"
   container_name       = "backend"
   key                  = "terraform.tfstate"
+}  
 }
-
-provider "azurerm" {
+ provider "azurerm" {
   features {}
   subscription_id = "a95dbe9e-bf88-4327-88b8-f85c96e18436"
   #tenant_id = "6af5992f-c8b9-4f47-ba6e-f795ec682a52"
